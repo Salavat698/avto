@@ -1,0 +1,123 @@
+.card{
+    max-width: 650px;
+}
+.card__sort-menu{
+    display: flex;
+    justify-content:space-between;
+    flex-direction: row;
+    align-items:center;
+}
+
+
+.card__card-item{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 5px;
+    border:1px solid rgb(192, 184, 184);
+    margin-bottom: 5px;
+    justify-content:space-between;
+    flex-direction: row;
+    align-items:center;
+    padding: 5px;
+}
+.card__card-img{
+    max-width: 158px;
+    max-height: 110px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+.card__card-name{
+    margin-bottom: 10px;
+}
+.card__main-contener{
+    margin-right: 10px;
+    color: #2452A1;
+}
+.card__wrapper{
+    display: flex;
+    flex-direction: row;
+}
+.card__card-logo{
+    margin-right: 5px;
+    max-width: 50px;
+    max-height: 20px;
+    object-fit: contain;
+}
+.card__list{
+    padding: 5px;
+    border: 1px rgb(187, 181, 181) solid;
+}
+
+@media (max-width: 850px) {
+    .card{
+        max-width: 800px;
+    }
+  }
+
+@media (max-width: 715px) {
+    .card__main-contener{
+        font-size: 12px;
+    }
+ }
+
+@media (max-width: 650px) {
+    .card__card-img{
+        max-width: 138px;
+        max-height: 90px;
+    }
+  }
+
+@media (max-width: 650px) {
+    .card__wrapper{
+        flex-direction: column;
+    }
+    .card__card-logo{
+        max-width: 30px;
+        max-height: 10px;
+        margin-bottom: 3px;
+    }
+  }
+
+  @media (max-width: 492px) {
+    .card__main-contener{
+        margin: 0;
+    }
+    .card__card-item{
+        flex-direction: column;
+    }
+    .card__card-img{
+        margin: 0;
+        max-width: 100%;
+        width: 80%;
+        margin-bottom: 3px;
+        object-fit:fill;
+    }
+    .card__main-contener{
+        flex-direction: row;
+        /* width: 100%; */
+        font-size: 15px;
+      }
+    .card__wrapper{
+        flex-direction: row;
+    }
+
+  }
+
+@media (max-width: 400px) {
+    .card__sort-menu{
+      flex-direction: column;
+    }
+    .btn{
+        align-self:flex-start;
+        padding: 0;
+        margin-bottom: 3px;
+    }
+    .card__sort{
+        align-self:flex-start;
+        margin-bottom: 3px;
+    }
+    .check__unit{
+        align-self:flex-start;
+    }
+  }
+

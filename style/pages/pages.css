@@ -1,0 +1,12 @@
+.pages{
+    padding: 0 10px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+@media (max-width: 850px) {
+    .pages{
+        
+        flex-direction: column;
+    }
+  }

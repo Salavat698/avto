@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/index.css">
+    <title>AvtoAlfa</title>
+</head>
+<body>
+    <main class="pages">
+        
+        <section class="manufacturers">
+            <h1 class="manufacturers__heading">ПРОИЗВОДИТЕЛИ</h1>
+
+          
+            <div class="manufacturers__box">
+                <div class="dropdown one">
+                    <span class="dropdown__name">СОБВСТВЕННОЕ ПРОИЗВОДСТВО АВТОМОБИЛЬНЫХ ЗАВОДОВ</span>
+                    <div class="dropdown__content">
+                    <input class="dropdown__input input__one" type="text" placeholder="поиск по производителю">
+                    <div class="dropdown__items">
+                    </div>
+                    </div>
+                </div>
+           
+                <div class="dropdown two">
+                    <span class="dropdown__name">КОМПЛЕКТУЮЩИЕ-ЗАВОДОВ СМЕЖНИКОВ</span>
+                    <div class="dropdown__content">
+                    <input class="dropdown__input input__two" type="text" placeholder="поиск по производителю">
+                    <div class="dropdown__items">
+                    </div>
+                    </div>
+                </div>
+
+                <div class="dropdown three">
+                    <span class="dropdown__name">ИМПОРТНЫЕ КОМПЛЕКТУЮЩИЕ</span>
+                    <div class="dropdown__content">
+                    <input class="dropdown__input input__three" type="text" placeholder="поиск по производителю">
+                    <div class="dropdown__items">
+                    </div>
+                    </div>
+                </div>
+
+                <div class="dropdown four">
+                    <span class="dropdown__name">АЛЬТЕРНАТИВА</span>
+                    <div class="dropdown__content">
+                    <input class="dropdown__input input__four" type="text" placeholder="поиск по производителю">
+                    <div class="dropdown__items">
+                    </div>
+                    </div>
+                </div>
+                <button class="manufacturers__button">Сбросить</button>
+            </div>
+
+             
+        </section>
+
+        <section class="card">
+            <div class="card__head">
+                <div class="card__sort-menu">
+                    <div class="btn"">
+                        <div class="switch-btn"></div>
+                        <span class="btn__span">В наличии</span>
+                    </div>
+                    
+                    <div class="card__sort">
+                        <span>Сортировка по:</span>
+                        <select class="check__sort" name="" id="">
+                            <option value="алфавиту А-Я">алфавиту А-Я</option>
+                            <option value="цене">цене</option>
+                        </select>
+                    </div>
+        
+                    <div class="check__unit">
+                        <span>Показывать по:</span>
+                        <select class="check__unit-select" name="" id="">
+                            <option class="check__unit-ten" value="10">10</option>
+                            <option class="check__unit-thirty" value="30">30</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="card__main">
+                <ul class="card__list">
+                    
+                </ul>
+                <button class="show-more">Показать еще</button>
+            </div>
+
+            <!-- пагинаций -->
+            <div class="padenation">
+                <!-- <div class="pagenumbers pagen-active">1</div>
+                <div class="pagenumbers">2</div>
+                <div class="pagen__dotch">...</div>
+                <div class="pagenumbers">3</div>-->
+                <!-- <div class="pagen__next">Следующие</div>  -->
+            </div>
+        </section>
+    </main>
+    
+    <template class="manufacturers-template">
+        <label>
+            <input type="checkbox">
+            <span class="dropdown__item"></span>
+        </label>
+    </template>
+
+    <template class="card-template">
+        <li class="card__card-item">
+            <img 
+                class="card__card-img lozad"
+                data-src = "image.png"
+                src=""
+                alt=""
+            >
+           
+            <div class="card__main-contener">
+                <div class="card__card-name">Втулка ушка рессоры гроднамидная КАМАЗ - Ростар</div>
+                <div class="card__wrapper">
+                    <img 
+                        class="card__card-logo" 
+                        src =''
+                        alt= "product img" 
+                    >
+                    <div class="card__card-manufacturer">КАМАЗ, ПАО, г. Набережные Челны</div>
+                </div>
+                <p class="card__card-articul">Артикул: Р5320-2902028-10</p>
+            </div>
+
+            <div class="backet-add">
+                <div class="backet-add__wrapper">
+                    <div class="backet-add__price">77.8 ₽</div>
+                    <span class="backet-add__span">ваша цена</span>
+                </div>
+            
+
+                <div class="backet-add__button">
+                    <span class="backet-add__quantity">На складе:0шт</span>
+
+                    <div class="backet-add__position">
+                        <div id="counter">
+                            <input type="button" id="buttonCountPlus" value="+">
+                            <div id="buttonCountNumber">1</div>
+                            <input type="button" id="buttonCountMinus" value="-">
+                        </div>
+                        <button class="backet-add__btn">В корзину</button>
+                       
+                    </div>
+                    <span class="backet-add__add hide">Товар в корзине</span>
+                </div>
+            </div>
+        </li>
+    </template>
+</body>
+<script type = " text/javascript " src = " https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js " ></script>
+<script type="module" src="./scripts/index.js"></script>
+
+</html>

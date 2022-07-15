@@ -1,0 +1,39 @@
+.btn{
+    padding: 10px;
+    display: flex;
+}
+.btn__span{
+    /* align-self: center; */
+}
+.switch-btn {
+   
+    display: inline-block;
+    width: 60px; /* ширина */
+    height: 21px; /* высота */
+    background: #fff; /* цвет фона */
+    z-index: 0;
+    margin: 0;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    transition-duration: 300ms; /* анимация */
+}
+.switch-btn::after {
+    content: "";
+    height: 19px; /* высота кнопки */
+    width: 30px; /* ширина кнопки */
+    background: #2452A1; /* цвет кнопки */
+    top: 1px; /* положение кнопки по вертикали относительно основы */
+    left: 1px; /* положение кнопки по горизонтали относительно основы */
+    transition-duration: 300ms; /* анимация */
+    position: absolute;
+    z-index: 1;
+    
+}
+.switch-on {
+    background: #fff;
+}
+.switch-on::after {
+    left: 29px;
+}

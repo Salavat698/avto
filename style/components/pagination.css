@@ -1,0 +1,35 @@
+.padenation{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+}
+.pagenumbers {
+	width: 20px;
+	height: 20px;
+	background-color:#2452A1;
+	color: white;
+	margin-right: 2px;
+	cursor: pointer;
+	text-align: center;
+	padding: 2px;
+	margin-bottom: 2px;
+}
+.pagen__dotch{
+	margin-right: 2px;
+	text-align:end;
+	vertical-align:bottom;
+	padding: 0;
+	line-height:200%;
+}
+.pagen__next{
+	height: 20px;
+	background-color:#2452A1;
+	color: white;
+	cursor: pointer;
+	padding: 2px;
+}
+.pagen-active{
+	background-color:red;
+}
+

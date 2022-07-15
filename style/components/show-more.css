@@ -1,0 +1,13 @@
+.show-more{
+    display: flex;
+    justify-content: center;
+    color:#2452A1 ;
+    background-color:white;
+    margin: 0 auto;
+    border: 2px #2452A1 solid;
+    width: 132px;
+    text-align: center;
+    cursor: pointer;
+    padding: 2px;
+    margin-bottom: 5px;
+}
